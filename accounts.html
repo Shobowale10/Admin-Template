@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All account</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/utilities_media_query.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVIGATE TO THE TOP BUTTON -->
+    <section onclick="scrollUp()" title="Go To The Top" id="top-container">
+        <i class="ri-arrow-up-circle-fill ri-4x top-icon" id="top-icon"></i>
+    </section>
+
+
+    <div class="h-1 flex-between ai-center no-break" id="details-container">
+        <section class="flex no-break">
+            <section id="menu" class="px-2">
+                <p><i class="fa-solid fa-bars fa-2x"></i></p>
+            </section>
+            
+            <p class="xsm pl-1"><span class="mobile-fade">Welcome, </span><i class="fa-solid fa-user fa-lg"></i> Admin</p>
+        </section>
+        <p class="md">All Post</p>
+        <a href="add-post.html" class="a"><button type="button" class="adverty-button b-3 sm mr-3"><i class="fa-solid fa-add fa-lg"></i> Add New Post</button></a>
+    </div>
+
+
+    <!-- LAYOUT STARTS -->
+    <div id="layout">
+        <!-- SIDEBAR -->
+        <div id="owner-sidebar">
+            <!-- LIST STARTS -->
+            <ul>
+                <a href="index.html" class="a">
+                    <li class="section">
+                        Home
+                    </li>
+                </a>
+                <a href="add-match.html" class="a">
+                    <li class="section">
+                        Edit Profile
+                    </li>
+                </a>
+                <a href="post.html" class="a">
+                    <li class="section">
+                        All Posts
+                    </li>
+                </a>
+                <a href="add-post.html" class="a">
+                    <li class="section">
+                        Create New BlogPost
+                    </li>
+                </a>
+                <a href="accounts.html" class="a">
+                    <li class="section">
+                        All User account
+                    </li>
+                </a>
+                <button type="button" class="xxsm ps-2 side-log" id="logout-button">Log Out</button>
+            </ul>
+            <!-- LIST ENDS -->
+        </div>
+        <!-- SIDEBAR ENDS -->
+
+        <!-- MANAGE POST STARTS -->
+        <div class="w-100" id="manage-post">
+            <div class="p-3">
+                <div class="w-100 flex mb-3" id="search-container">
+                    <input type="text" id="search-post" class="search-post w-100" placeholder="Search.....">
+                    <i class="fa fa-search fa-lg"></i>
+                </div>
+
+                <section class="w-97 danger flex-center ai-center no-break my-2 new">
+                    <section class="w-90 m-auto">
+                        <p class="alert text-center">"John Doe" account has suspended and sucessfully.</p> 
+                    </section>
+                </section>
+
+                <div class="card mp-post">
+                    <!-- IMAGE SECTION -->
+                    <div class="flex break">
+                        <div class="w-inherit">
+                            <img src="img/author/1.png" class="mp-img" alt="Post Image">
+                        </div>
+                        
+                        <!-- NEWS TITLE SECTION -->
+                        <div class="news-title ml-2">
+                            <!-- HEADLINE -->
+                            <p class="xsm headline mt-3">Elliot John</p>
+                            <!-- NEWS DETAILS -->
+                            <section class="my-1 news-information">
+                                <i class="fa-solid fa-user ri-xl"></i><item class="author xsm l-2"> <b>Admin</b></item>
+                                <i class="fa-sharp fa-regular fa-futbol ml-1"></i> <item class="xsm"> <b>Make money  </b></item>
+                                <i class="fa-solid fa-clock ml-1"></i> <item class="xsm l-2"> <b> 27th of May, 2023 </b></item>
+                            </section>
+                            
+                            <section class="flex-between no-break text-center">
+                                <a href="" class="edit-links a" title="Edit Post"> <p class="xsm">Suspend account <i class="fa-solid fa-edit"></i></p> </a>
+                                <a href="" class="delete-links a"> <p class="xsm" title="Delete Post">Delete account <i class="fa-solid fa-trash"></i></p> </a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="link-container flex ai-center no-break">
+                        <input type="text" value="https://www.mywebsite.com/friends/Elliot-John" class="copy-text" id="copy1" readonly>
+                        <button class="copy-post-link" title="Copy Post Link" data-id="copy1">Copy!</button>
+
+                        <div class="copy-tooltip">
+                            <span class="tooltip-text tooltip1">Copied</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mp-post">
+                    <!-- IMAGE SECTION -->
+                    <div class="flex break">
+                        <div class="w-inherit">
+                            <img src="img/author/2.png" class="mp-img" alt="Post Image">
+                        </div>
+                        
+                        <!-- NEWS TITLE SECTION -->
+                        <div class="news-title ml-2">
+                            <!-- HEADLINE -->
+                            <p class="xsm headline mt-3">Anastasia Joy</p>
+                            <!-- NEWS DETAILS -->
+                            <section class="my-1 news-information">
+                                <i class="fa-solid fa-user ri-xl"></i><item class="author xsm l-2"> <b>Admin</b></item>
+                                <i class="fa-sharp fa-regular fa-futbol ml-1"></i> <item class="xsm"> <b>Make money  </b></item>
+                                <i class="fa-solid fa-clock ml-1"></i> <item class="xsm l-2"> <b> 27th of May, 2023 </b></item>
+                            </section>
+                            
+                            <section class="flex-between no-break text-center">
+                                <a href="" class="edit-links a" title="Edit Post"> <p class="xsm">Suspend account <i class="fa-solid fa-edit"></i></p> </a>
+                                <a href="" class="delete-links a"> <p class="xsm" title="Delete Post">Delete account <i class="fa-solid fa-trash"></i></p> </a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="link-container flex ai-center no-break">
+                        <input type="text" value="https://www.mywebsite.com/friends/anastasia-joy" class="copy-text" id="copy2" readonly>
+                        <button class="copy-post-link" title="Copy Post Link" data-id="copy2">Copy!</button>
+
+                        <div class="copy-tooltip">
+                            <span class="tooltip-text tooltip2">Copied</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mp-post">
+                    <!-- IMAGE SECTION -->
+                    <div class="flex break">
+                        <div class="w-inherit">
+                            <img src="img/author/3.png" class="mp-img" alt="Post Image">
+                        </div>
+                        
+                        <!-- NEWS TITLE SECTION -->
+                        <div class="news-title ml-2">
+                            <!-- HEADLINE -->
+                            <p class="xsm headline mt-3">Juan Jesus</p>
+                            <!-- NEWS DETAILS -->
+                            <section class="my-1 news-information">
+                                <i class="fa-solid fa-user ri-xl"></i><item class="author xsm l-2"> <b>Admin</b></item>
+                                <i class="fa-sharp fa-regular fa-futbol ml-1"></i> <item class="xsm"> <b>Make money  </b></item>
+                                <i class="fa-solid fa-clock ml-1"></i> <item class="xsm l-2"> <b> 27th of May, 2023 </b></item>
+                            </section>
+                            
+                            <section class="flex-between no-break text-center">
+                                <a href="" class="edit-links a" title="Edit Post"> <p class="xsm">Suspend account <i class="fa-solid fa-edit"></i></p> </a>
+                                <a href="" class="delete-links a"> <p class="xsm" title="Delete Post">Delete account <i class="fa-solid fa-trash"></i></p> </a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="link-container flex ai-center no-break">
+                        <input type="text" value="https://www.mywebsite.com/friends/Juan-Jesus" class="copy-text" id="copy3" readonly>
+                        <button class="copy-post-link" title="Copy Post Link" data-id="copy3">Copy!</button>
+
+                        <div class="copy-tooltip">
+                            <span class="tooltip-text tooltip3">Copied</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mp-post">
+                    <!-- IMAGE SECTION -->
+                    <div class="flex break">
+                        <div class="w-inherit">
+                            <img src="img/author/4.png" class="mp-img" alt="Post Image">
+                        </div>
+                        
+                        <!-- NEWS TITLE SECTION -->
+                        <div class="news-title ml-2">
+                            <!-- HEADLINE -->
+                            <p class="xsm headline mt-3">Esther Ruth</p>
+                            <!-- NEWS DETAILS -->
+                            <section class="my-1 news-information">
+                                <i class="fa-solid fa-user ri-xl"></i><item class="author xsm l-2"> <b>Admin</b></item>
+                                <i class="fa-sharp fa-regular fa-futbol ml-1"></i> <item class="xsm"> <b>Technology </b></item>
+                                <i class="fa-solid fa-clock ml-1"></i> <item class="xsm l-2"> <b> 27th of May, 2023 </b></item>
+                            </section>
+                            
+                            <section class="flex-between no-break text-center">
+                                <a href="" class="edit-links a" title="Edit Post"> <p class="xsm">Suspend account <i class="fa-solid fa-edit"></i></p> </a>
+                                <a href="" class="delete-links a"> <p class="xsm" title="Delete Post">Delete account <i class="fa-solid fa-trash"></i></p> </a>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="link-container flex ai-center no-break">
+                        <input type="text" value="https://www.mywebsite.com/friends/Esther-Ruth" class="copy-text" id="copy4" readonly>
+                        <button class="copy-post-link" title="Copy Post Link" data-id="copy4">Copy!</button>
+
+                        <div class="copy-tooltip">
+                            <span class="tooltip-text tooltip4">Copied</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+             <!-- LOGOUT STARTS -->
+             <div class="m-auto" id="logout">
+                <!-- CONTENT STARTS -->
+                <div class="w-auto center">
+                    <section class="hs label">
+                        <h2 class=" center l-5">LOG OUT</h2> 
+                    </section>
+
+                    <section class="p-2" id="logout-content">
+                        <p class="xxsm l-3 pt-1">
+                            <b>Admin</b> are you sure you want to log Out?
+                        </p>
+
+                        <section class="flex-around p-1">
+                            <a href="login.html"><button type="button" class="advertx-button xxsm mr-5">Yes</button></a>
+                            <button type="button" class="advertx-button xxsm" onclick="closeLogout()">No</button>
+                        </section>
+                    </section>
+
+                    <section class="p-1 label flex center">
+                        <p class="xxsm l-2 h-auto">My website </p><span class="ml-1">&copy;2022</span>
+                    </section>
+                </div>
+                <!-- CONTENT ENDS -->
+            </div>
+            <!-- LOGOUT ENDS -->
+
+            <footer class="flex-center no-break ai-center" id="footer">
+                <section class="py-1">
+                    <p class="xsm white">My Admin Website &copy; 2023</p>
+                </section>
+            </footer>
+        </div>
+        <!-- MANAGE POST ENDS -->
+    </div>
+    <!-- LAYOUT ENDS -->
+
+
+    <script src="tinymce/tinymce.js"></script>
+
+    <script>
+        tinymce.init({
+            selector:'#details',
+            plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+        imagetools_cors_hosts: ['picsum.photos'],
+        menubar: 'file edit view insert format tools table help',
+        toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl'
+        });
+    </script>   
+
+    <!-- JAVASCRIPT STARTS  -->
+    <script src="js/admin.js"></script>
+<!-- JAVASCRIPT ENDS  -->
+</body>
+</html>

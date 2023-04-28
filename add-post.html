@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Post</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/utilities_media_query.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVIGATE TO THE TOP BUTTON -->
+    <section onclick="scrollUp()" title="Go To The Top" id="top-container">
+        <i class="ri-arrow-up-circle-fill ri-4x top-icon" id="top-icon"></i>
+    </section>
+
+
+    <div class="h-1 flex-between ai-center no-break" id="details-container">
+        <section class="flex no-break">
+            <section id="menu" class="px-2">
+                <p><i class="fa-solid fa-bars fa-2x"></i></p>
+            </section>
+            
+            <p class="xsm pl-1"><span class="mobile-fade">Welcome, </span><i class="fa-solid fa-user fa-lg"></i> Admin</p>
+        </section>
+        <p class="md">Create Post</p>
+        <a href="add-post.html" class="a"><button type="button" class="adverty-button b-3 sm mr-3"><i class="fa-solid fa-add fa-lg"></i> Add New Post</button></a>
+    </div>
+
+
+    <!-- LAYOUT STARTS -->
+    <div id="layout">
+        <!-- SIDEBAR -->
+        <div id="owner-sidebar">
+            <!-- LIST STARTS -->
+            <ul>
+                <a href="index.html" class="a">
+                    <li class="section">
+                        Home
+                    </li>
+                </a>
+                <a href="profile.html" class="a">
+                    <li class="section">
+                        Edit Profile
+                    </li>
+                </a>
+                <a href="post.html" class="a">
+                    <li class="section">
+                        All Posts
+                    </li>
+                </a>
+                <a href="add-post.html" class="a">
+                    <li class="section">
+                        Create New BlogPost
+                    </li>
+                </a>
+                <a href="accounts.html" class="a">
+                    <li class="section">
+                        All User Accounts
+                    </li>
+                </a>
+                <button type="button" class="xxsm ps-2 side-log" id="logout-button">Log Out</button>
+            </ul>
+            <!-- LIST ENDS -->
+        </div>
+        <!-- SIDEBAR ENDS -->
+
+        <!-- MANAGE POST STARTS -->
+        <div class="w-100" id="manage-post">
+            <div class="flex-center ai-center p-3">
+                <!-- NEW BLOG SECTION STARTS -->
+                <div class="card w-100 p-2" id="new-post-form">
+                    <!-- NAME -->
+                    <div class="py-2">
+                        <section class="info w-80 mx-auto">
+                            <p class="text-center white">Create New Blog Post</p>
+                        </section>
+                    </div>
+
+                    <section>
+                        <span class="alert ml-4">* are Required Fields *</span> 
+                    </section>
+                    
+                    <!-- NEW POST FORM STARTS -->
+                    <form method="post" action="" target="_self" enctype="multipart/form-data" class="w-100">
+                        <!-- SECTION 1 -->
+                        <section class="mb-3">
+                            <label for="title" class="md mb-2">Post Author: </label>
+                            <input type="text" class="xsm w-100" Value="" placeholder="Enter username*" name="post_editor" value="">
+                        </section>
+
+                        <section class="">
+                            <label for="title" class="md">New Post Title: </label>
+                            <input type="text" class="xsm w-100" placeholder="*Enter Post Title*" name="post_title"  value="">
+                            <p class="alert"></p>
+                        </section>
+
+                        <section class="">
+                            <label for="title" class="md">Post Image: </label>
+                            <input type="file" class="xsm" name="post_image">
+                            <p class="alert"></p>
+                        </section>
+
+                        <!-- SECTION 2 -->
+                        <section>
+                            <label for="title" class="md">Post Category: </label>
+                            <input type="text" class="xsm w-100" placeholder="*Enter Post Category*" name="post_category" value="">
+                            <p class="alert"></p>
+                        </section>
+
+                        <!-- SECTION 3 -->
+                        <section class="mb-3" id="textarea-container">
+                            <label for="title" class="md">New Post Details: </label>
+                            <textarea class="ps-2 w-100" placeholder="*Enter Post Details*" cols="40" rows="10" name="post_details" id="details"></textarea>
+                            <p class="alert"></p>
+                        </section>
+                        
+                        <!-- SECTION 4 -->
+                        <section class="py-2 center" id="button-container">
+                            <button type="submit" name="new_post" class="advertx-button center xsm">Create Post</button>
+                        </section>
+                    </form>
+                    <!-- NEW POST FORM ENDS -->
+                </div>
+                <!-- NEW POST SECTION ENDS -->
+            </div>
+    
+            
+            <!-- LOGOUT STARTS -->
+            <div class="m-auto" id="logout">
+                <!-- CONTENT STARTS -->
+                <div class="w-auto center">
+                    <section class="hs label">
+                        <h2 class=" center l-5">LOG OUT</h2> 
+                    </section>
+
+                    <section class="p-2" id="logout-content">
+                        <p class="xxsm l-3 pt-1">
+                            <b>Admin</b> are you sure you want to log Out?
+                        </p>
+
+                        <section class="flex-around p-1">
+                            <a href="login.html"><button type="button" class="advertx-button xxsm mr-5">Yes</button></a>
+                            <button type="button" class="advertx-button xxsm" onclick="closeLogout()">No</button>
+                        </section>
+                    </section>
+
+                    <section class="p-1 label flex center">
+                        <p class="xxsm l-2 h-auto">My website </p><span class="ml-1">&copy;2022</span>
+                    </section>
+                </div>
+                <!-- CONTENT ENDS -->
+            </div>
+            <!-- LOGOUT ENDS -->
+
+            <footer class="flex-center no-break ai-center" id="footer">
+                <section class="py-1">
+                    <p class="xsm white">My Admin Website &copy; 2023</p>
+                </section>
+            </footer>
+        </div>
+        <!-- MANAGE POST ENDS -->
+    </div>
+    <!-- LAYOUT ENDS -->
+
+
+    <script src="tinymce/tinymce.js"></script>
+
+    <script>
+        tinymce.init({
+            selector:'#details',
+            plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media template codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons',
+        imagetools_cors_hosts: ['picsum.photos'],
+        menubar: 'file edit view insert format tools table help',
+        toolbar: 'undo redo | bold italic underline strikethrough | fontfamily fontsize blocks | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl'
+        });
+    </script>   
+
+    <!-- JAVASCRIPT STARTS  -->
+    <script src="js/admin.js"></script>
+<!-- JAVASCRIPT ENDS  -->
+</body>
+</html>

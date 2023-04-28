@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin Account</title>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/utilities_media_query.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVIGATE TO THE TOP BUTTON -->
+    <section onclick="scrollUp()" title="Go To The Top" id="top-container">
+        <i class="ri-arrow-up-circle-fill ri-4x top-icon" id="top-icon"></i>
+    </section>
+
+    <div class="flex-center ai-center no-break" id="details-container">
+        <p class="md py-2">My Admin Website</p>
+    </div>
+
+    <!-- OWNER LOGIN STARTS -->
+    <div id="login2" class="py-6 center">
+        <!-- OWNER LOGIN CONTAINER STARTS -->
+        <div class="login p-1 h-100 m-auto">
+            <p class="xmd text-center tetiary">LOGIN</p>
+            <p class="text-center main b-2">Log in to your admin account</p>
+            <!-- FORM STARTS -->
+            <form action="" method="post" target="_self" class="h-100 py-2" id="login-form2">
+                <section>
+                    <input type="text" placeholder="Enter Username" class="xsm" name="username" id="username" value="">
+                    <p class="error" id="usernameErr"><i class='fa-solid fa-circle-exclamation'></i> Username is required*</p>
+                </section>
+
+                <section>
+                    <section class="relative">
+                        <input type="password" placeholder="Enter Password" class="xsm" name="password" id="password" value="">
+                        <section id="password-visibility" class="absolute" onclick="toogleEye()">
+                            <i class="fa-sharp fa-solid fa-eye-slash" id="toogle-eye"></i>
+                        </section>
+                    </section>
+                    <p class="error" id="passwordErr" style="margin-top: -22px;"><i class='fa-solid fa-circle-exclamation'></i> Password is required*</p>
+
+                    <a href="register.html"><p class="mt-1">Register Admin Account</p></a>
+                </section>
+
+                <section>
+                    <button type="submit" name="log-in" class="advertx-button xsm">Log In</button>
+                </section>
+            </form>
+            <!-- FORM ENDS -->
+        </div>
+        <!-- OWNER CONTAINER ENDS -->
+    </div>
+    <!-- OWNER CONTAINER ENDS -->
+
+    <footer class="flex-center no-break ai-center" style="background:#B80304">
+        <section class="py-1">
+            <p class="xsm white">Admin Website &copy; 2023</p>
+        </section>
+    </footer>
+
+    <!-- JAVASCRIPT STARTS  -->
+    <script src="js/admin.js"></script>
+</body>
+</html>
