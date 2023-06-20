@@ -55,6 +55,13 @@
             top: 180px;
             left: 37%;
         }
+
+        #new-post-form input,
+        #edit-post-form input,
+        #new-post-form textarea,
+        #edit-post-form textarea   {
+            width: 95%;
+        }
 }
 
 
@@ -329,6 +336,13 @@
         #logout button:last-child{
             margin-top: 20px;
             margin-left: -50px;
+        }
+
+        #new-post-form input,
+        #edit-post-form input,
+        #new-post-form textarea,
+        #edit-post-form textarea   {
+            width: 93%;
         }
 }
 
@@ -728,6 +742,8 @@
         .login {
             width: 80%;
         }
+
+
 }
 
 
@@ -856,6 +872,10 @@
             
         #logout button:last-child {
             margin-left: 0;
+        }
+
+        div.mp-post div.news-title section.news-information {
+            margin-top: -2px;
         }
 }
 

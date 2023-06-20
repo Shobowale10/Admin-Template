@@ -24,6 +24,15 @@ body {
     color: #000000;
 }
 
+:root {
+    --mainColor: #097bed;
+    --secondaryColor: #080808;
+    --tetiaryColor: #097bed;
+    --white: #ffffff;
+    --black: #000000;
+    --dark: #333333;
+}
+
 .main {
     color: #097bed;
 }
@@ -583,11 +592,34 @@ div.link-container {
 
 
 #new-post-form input,
-#edit-post-form input  {
+#new-post-form select,
+#edit-post-form input,
+#new-post-form textarea,
+#edit-post-form textarea   {
     /* height: 50px; */
     font-size: 18px;
+    border: 2px solid var(--mainColor);
     padding: 7px 15px;
-    width: 97%;
+    width: 96%;
+    border-radius: 3px;
+}
+
+#new-post-form select {
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-left: 10px;
+}   
+
+#new-post-form input:hover,
+#new-post-form select:hover,
+#edit-post-form input:hover,
+#new-post-form textarea:hover,
+#edit-post-form textarea:hover {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid var(--mainColor);
+    outline: 2px solid var(--mainColor);
 }
 
 #new-post-form textarea,
